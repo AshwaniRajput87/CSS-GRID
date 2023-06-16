@@ -1,15 +1,16 @@
-/* .container {
+.container {
    display: flex;
    flex-wrap: wrap;
    gap: 2rem;
-   justify-content: space-between;
+   justify-content: flex-start;
+   margin-bottom: 10rem;
 }
 
 .box {
   background-color: #ddd;
-  flex-basis: calc(33.33% - 2rem);
+  flex-basis: calc(25% - 2rem);
   height: 100px;
-} */
+}
 
 /* .container {
   display: grid;
@@ -25,7 +26,7 @@
 } */
 
 
-.container {
+.flex-container {
   display: flex;
   flex-direction: column;
   gap: 1rem; /* 1rem = 10px*/
