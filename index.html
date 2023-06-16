@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-size: 62.5%;
+        }
+
+        div, p {
+            font-size: 1.6rem;
+        }
+    </style>
+ 
+</head>
+<body>
+    <!-- Grid layout like youtube channel landing page -->
+    <!--<div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>-->
+
+    <!-- Layout 2 via flexbox-->
+    <div class="container">
+        <section class="header">Header</section>
+        <section class="main">
+           <article class="sidebar">Sidebar
+
+            <p>
+                Sidebar item 1   
+            </p>
+            <p>
+                Sidebar item 2   
+            </p>
+            <p>
+                Sidebar item 3   
+            </p>
+        </article>
+           <article class="main-content"> Main Content</article>
+    </section>
+        <section class="footer"> Footer</section>
+    </div>
+
+    <!-- Layout 2 via grid -->
+    <div class="grid-container">
+        <section class="grid-item item-1">Header</section>
+        <section class="grid-item item-2">Sidebar
+            <p>
+                Sidebar item 1   
+            </p>
+            <p>
+                Sidebar item 2   
+            </p>
+            <p>
+                Sidebar item 3   
+            </p>
+        </section>
+        <section class="grid-item item-3">Main content</section>
+        <section class="grid-item item-4">Footer</section>
+    </div>
+    
+    <link rel="stylesheet" href="./css/grid-styles.css" />
+</body>
+</html>

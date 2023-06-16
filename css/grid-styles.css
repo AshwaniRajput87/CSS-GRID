@@ -1,0 +1,106 @@
+/* .container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: space-between;
+}
+
+.box {
+  background-color: #ddd;
+  flex-basis: calc(33.33% - 2rem);
+  height: 100px;
+} */
+
+/* .container {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.box {
+  background-color: #ddd;
+  padding: 1rem;
+  height: 100px;
+} */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* 1rem = 10px*/
+}
+.header {
+  background-color: #ddd;
+  padding: 2rem;
+}
+.main {
+  display: flex;
+  gap: 1rem;
+}
+.sidebar {
+  flex-basis: calc(22% - 1rem); /* 23% width need define and minus 1rem gutter space (space between each flex item)*/
+  background-color: #ddd;
+  padding: 2rem;
+}
+.main-content {
+  flex-basis: calc(72% - 1rem);
+  background-color: #ddd;
+  padding: 2rem;
+}
+.footer {
+  background-color: #ddd;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+/*
+Layout 2 css via grid
+*/
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    /* grid-template-areas: 
+    'header'
+    'sidebar'
+    'main'
+    'footer'; */
+    gap: 1rem;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  'header header header header'
+  'sidebar main main main'
+  'footer footer footer footer';
+  gap: 1rem;
+}
+
+.grid-item {
+  background-color: #ddd;
+  padding: 2rem;
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: sidebar;
+}
+
+.item-3 {
+  grid-area: main;
+}
+
+.item-4 {
+  grid-area: footer;
+}
+
+
