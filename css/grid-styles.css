@@ -45,7 +45,7 @@
   padding: 2rem;
 }
 .main-content {
-  flex-basis: calc(72% - 1rem);
+  flex-basis: calc(72.5% - 1rem);
   background-color: #ddd;
   padding: 2rem;
 }
